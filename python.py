@@ -6,3 +6,7 @@ if key in vals.keys():
     vals[key].append(new_val)
 else:
     vals[key]  = [new_val] 
+
+# String manipulation
+s ="abc"
+s[i] = s #not allowed 
