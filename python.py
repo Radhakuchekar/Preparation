@@ -2,6 +2,10 @@
 # extracting columns 
 for col in zip(*grid)
 
+# extracting 2 values from each row
+#grid[i][:2]----> this does not work it returns entire row
+# instead use [row[:2] for row in grid]
+
 # dictionary with list as values
 vals = dict()
 key = 'something' #key cannot be list only hashable data types can be used as key
