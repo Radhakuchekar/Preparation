@@ -1,3 +1,7 @@
+# 2D array
+# extracting columns 
+for col in zip(*grid)
+
 # dictionary with list as values
 vals = dict()
 key = 'something' #key cannot be list only hashable data types can be used as key
@@ -30,3 +34,8 @@ from typing import Callable
 def execute_operation(x: int, y: int, operation: Callable[[int, int], int]) -> int: #Callable[[int, int], int] means a function that takes two int arguments and returns an int
     return operation(x, y)
 print(execute_operation(5, 3, lambda a, b: a + b))  # Output: 8
+
+from typing import List
+
+def cut_rod(lengths: List[int], prices: List[int], arr_length: int, n: int) -> bool:
+    print()
